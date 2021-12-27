@@ -82,7 +82,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .site-nav-list-title.current {
@@ -364,7 +364,6 @@ button {
   line-height: 1.18;
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .our-team-list-item-role {
@@ -373,7 +372,6 @@ button {
   line-height: 1.18;
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -429,20 +427,31 @@ button {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .portfolio-item {
   margin: 15px;
+  /* margin-top: 15px;
+  margin-left: 15px; */
   background-color: var(--main-backgroung);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  border: 1px solid #eeeeee;
   flex-basis: calc((100% - 90px) / 3);
 }
 
+.portfolio-item:nth-child(3) {
+  margin-right: 0;
+}
+.portfolio-card {
+  padding: 20px 24px;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
 .portfolio-item-title {
-  margin: 20px 24px 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -450,11 +459,9 @@ button {
 }
 
 .portfolio-item-description {
-  margin: 0px 24px 20px;
-  font-weight: normal;
+  margin-top: 4px;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  line-height: 1.875;
   color: var(--secondary-text-color);
 }
 
