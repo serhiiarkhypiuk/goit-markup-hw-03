@@ -8,7 +8,6 @@
   --light-background: #f5f4fa;
 }
 
-
 /* ----------------------- */
 
 /* Описание общих правил */
@@ -216,14 +215,14 @@ button {
 
 .contact-footer-list-text:hover,
 .contact-footer-list-text:focus {
-  color: var(--main-backgroung)
+  color: var(--main-backgroung);
 }
 
 .contact-footer-list-contact:hover,
 .contact-footer-list-contact:focus,
 .contact-footer-list-item:hover,
 .contact-footer-list-item:focus {
-  color: color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ----------------------------------------- */
@@ -438,7 +437,7 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   flex-basis: calc((100% - 90px) / 3);
 }
 
