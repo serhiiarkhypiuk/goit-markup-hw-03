@@ -75,7 +75,7 @@ button {
   /* outline: 2px solid red; */
 }
 
-.site-nav-list-title.current {
+.site-nav .list .list-item .current {
   color: var(--accent-text-color);
 }
 
@@ -94,7 +94,7 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
-.logo-head {
+.header .logo {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: 'Raleway';
@@ -113,12 +113,12 @@ button {
   color: var(--main-text-color);
 }
 
-.site-nav-list {
+.site-nav .list {
   display: flex;
   list-style-type: none;
 }
 
-.site-nav-list-title {
+.site-nav .list .list-title {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -135,12 +135,12 @@ button {
   margin-left: auto;
 }
 
-.site-nav-list-item:not(:last-child),
-.contact-nav-list-item:not(:last-child) {
+.site-nav .list .list-item:not(:last-child),
+.contact-nav-list .list-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-nav-list-title {
+.contact-nav-list .list-title {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -151,10 +151,10 @@ button {
   text-decoration: none;
 }
 
-.contact-nav-list-title:hover,
-.contact-nav-list-title:focus,
-.site-nav-list-title:hover,
-.site-nav-list-title:focus {
+.contact-nav-list .list-title:hover,
+.contact-nav-list .list-title:focus,
+.site-nav .list .list-title:hover,
+.site-nav .list .list-title:focus {
   color: var(--accent-text-color);
 }
 
@@ -162,7 +162,7 @@ button {
 
 /* Описание стилей футера */
 
-.logo-foot {
+.footer .logo {
   font-family: 'Raleway';
   font-weight: bold;
   font-size: 26px;
@@ -172,7 +172,7 @@ button {
   text-decoration: none;
 }
 
-.logo-footer {
+.footer .logo-footer {
   color: #ffffff;
   font-family: 'Raleway';
 }
@@ -183,13 +183,13 @@ button {
   padding: 60px 0px;
 }
 
-.contact-footer-list {
+.contacts-list {
   margin-top: 20px;
   list-style-type: none;
   font-style: normal;
 }
 
-.contact-footer-list-text {
+.contacts .contacts-list .text {
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -199,23 +199,23 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-footer-list-item:not(:last-child) {
+.contacts .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contact-footer-list-text:hover,
-.contact-footer-list-text:focus {
+.contacts .contacts-list .text:hover,
+.contacts .contacts-list .text:focus {
   color: var(--main-backgroung);
 }
 
-.contact-footer-list-text.current {
+.contacts .contacts-list .current {
   color: var(--main-backgroung);
 }
 
-.contact-footer-list-contact:hover,
-.contact-footer-list-contact:focus,
-.contact-footer-list-item:hover,
-.contact-footer-list-item:focus {
+.contacts .list-item:hover,
+.contacts .list-item:focus,
+.contacts .list-item:hover,
+.contacts .list-item:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -263,18 +263,18 @@ button {
 
 /* Описание стилей секции особенностей */
 
-.qualities-list {
+.qualities {
   list-style-type: none;
   display: flex;
   margin: -15px;
 }
 
-.qualities-list-item {
+.qualities .list-item {
   margin: 15px;
   width: calc((100% -120px) / 4);
 }
 
-.qualities-list-item-title {
+.qualities .list-item .title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -283,7 +283,7 @@ button {
   text-transform: uppercase;
 }
 
-.qualities-list-item-text {
+.qualities .list-item .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -294,11 +294,11 @@ button {
 
 /* Описание стилей секции чем мы занимаемся */
 
-.we-do {
+.work {
   padding-top: 0px;
 }
 
-.we-do-header {
+.work-header {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -307,7 +307,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.work-examples {
+.work-list {
   list-style-type: none;
   display: flex;
 }
@@ -339,19 +339,19 @@ button {
   display: flex;
 }
 
-.our-team-list-item:not(:last-child) {
+.our-team .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team-list-item {
+.our-team .list-item {
   background-color: var(--main-backgroung);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-item-title {
-  margin-top: 15px;
+.our-team .list-item .title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -360,8 +360,8 @@ button {
   text-align: center;
 }
 
-.our-team-list-item-role {
-  margin-bottom: 15px;
+.our-team .list-item .role {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
@@ -372,10 +372,6 @@ button {
 /* ----------------------------------- */
 
 /* Фильтр на странице портфолио */
-
-/* .portfolio-section {
-  align-items: center;
-} */
 
 .filter {
   list-style-type: none;
@@ -396,7 +392,7 @@ button {
   border: none;
 }
 
-.filter-item:not(:last-child) {
+.filter .item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -408,7 +404,7 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-button.filter-active {
+.filter .item .filter-active {
   color: #ffffff;
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -424,32 +420,32 @@ button {
   margin: calc(-1 * 15px);
 }
 
-.portfolio-item {
+.portfolio-list .item {
   margin: 15px;
   background-color: var(--main-backgroung);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-item:nth-child(3) {
+.portfolio-list .item:nth-child(3) {
   margin-right: 0;
 }
 
-.portfolio-card {
+.portfolio-list .card {
   padding: 20px 24px;
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.portfolio-item-title {
+.portfolio-list .item .title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-item-description {
+.portfolio-list .item .description {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.875;
