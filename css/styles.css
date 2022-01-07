@@ -52,6 +52,10 @@ button {
   font-family: inherit;
 }
 
+.list {
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -115,7 +119,6 @@ button {
 
 .site-nav .list {
   display: flex;
-  list-style-type: none;
 }
 
 .site-nav .list .list-title {
@@ -131,8 +134,8 @@ button {
 }
 
 .contact-nav-list {
-  list-style-type: none;
   margin-left: auto;
+  list-style-type: none;
 }
 
 .site-nav .list .list-item:not(:last-child),
@@ -183,13 +186,12 @@ button {
   padding: 60px 0px;
 }
 
-.contacts-list {
+.footer .contacts .list {
   margin-top: 20px;
-  list-style-type: none;
   font-style: normal;
 }
 
-.contacts .contacts-list .text {
+.footer .contacts .list .text {
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -199,23 +201,23 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts .list-item:not(:last-child) {
+.footer .contacts .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts .contacts-list .text:hover,
-.contacts .contacts-list .text:focus {
+.footer .contacts .list .text:hover,
+.footer .contacts .list .text:focus {
   color: var(--main-backgroung);
 }
 
-.contacts .contacts-list .current {
+.footer .contacts .list .current {
   color: var(--main-backgroung);
 }
 
-.contacts .list-item:hover,
-.contacts .list-item:focus,
-.contacts .list-item:hover,
-.contacts .list-item:focus {
+.footer .contacts .list .item:hover,
+.footer .contacts .list .item:focus,
+.footer .contacts .list .item:hover,
+.footer .contacts .list .item:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -263,18 +265,17 @@ button {
 
 /* Описание стилей секции особенностей */
 
-.qualities {
-  list-style-type: none;
+.qualities .list {
   display: flex;
   margin: -15px;
 }
 
-.qualities .list-item {
+.qualities .list .item {
   margin: 15px;
   width: calc((100% -120px) / 4);
 }
 
-.qualities .list-item .title {
+.qualities .list .item .title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -283,7 +284,7 @@ button {
   text-transform: uppercase;
 }
 
-.qualities .list-item .text {
+.qualities .list .item .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -298,21 +299,21 @@ button {
   padding-top: 0px;
 }
 
-.work-header {
+.work .header {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
 }
 
-.work-list {
-  list-style-type: none;
+.work .list {
   display: flex;
 }
 
-.work-example:not(:last-child) {
+.work .example:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -325,32 +326,32 @@ button {
   align-items: center;
 }
 
-.our-team-header {
+.our-team .header {
   margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  border: none;
 }
 
-.our-team-list {
-  list-style-type: none;
+.our-team .list {
   display: flex;
 }
 
-.our-team .list-item:not(:last-child) {
+.our-team .list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team .list-item {
+.our-team .list .item {
   background-color: var(--main-backgroung);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team .list-item .title {
+.our-team .list .item .title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -360,7 +361,7 @@ button {
   text-align: center;
 }
 
-.our-team .list-item .role {
+.our-team .list .item .role {
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
@@ -373,14 +374,14 @@ button {
 
 /* Фильтр на странице портфолио */
 
-.filter {
-  list-style-type: none;
+.filter-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  list-style-type: none;
 }
 
-.filter-button {
+.filter-list .item .filter-button {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -392,19 +393,19 @@ button {
   border: none;
 }
 
-.filter .item:not(:last-child) {
+.filter-list .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter-list .item .filter-button:hover,
+.filter-list .item .filter-button:focus {
   color: #ffffff;
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter .item .filter-active {
+.filter-list .item .filter-active {
   color: #ffffff;
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -413,39 +414,38 @@ button {
 
 /* Описание стилей секции портфолио */
 
-.portfolio-list {
-  list-style-type: none;
+.portfolio .list {
   display: flex;
   flex-wrap: wrap;
   margin: calc(-1 * 15px);
 }
 
-.portfolio-list .item {
+.portfolio .list .item {
   margin: 15px;
   background-color: var(--main-backgroung);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-list .item:nth-child(3) {
+.portfolio .list .item:nth-child(3) {
   margin-right: 0;
 }
 
-.portfolio-list .card {
+.portfolio .list .card {
   padding: 20px 24px;
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.portfolio-list .item .title {
+.portfolio .list .item .title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-list .item .description {
+.portfolio .list .item .description {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.875;
